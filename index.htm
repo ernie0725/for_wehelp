@@ -1,71 +1,118 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>自己重新摸索</title>
+    <title>WEHELP</title>
     <style type="text/css">
-    .head{
-        font-size:24px;background-color:black;color:white;text-align: center;
-    } 
-    .head2{
-        font-size:24px;background-color: brown;color: white;text-align: center;
-    }
-    .content{
-        font-family:標楷體;font-size:20px;background-color: yellow;color:blue;text-align: left;border:1px;word-wrap:break-word;
-    } 
-    .box {
-    width: 100px;
-    height: 100px;
-    background-image: url(/img/sunset-1651426__340.jpg);
-}  
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .wrap{
+            width: 100%;
+            max-width: 1170px;
+            margin: auto;
+           
+        }
+        .item{
+            background-color: #ffa;
+            margin: 0px 5px;
+            padding: 10px; 
+            
+        }
+        .item1{
+            background-color: #ffa;
+            margin: 0px 5px 5px;
+            padding: 10px; 
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Courier New', Courier, monospace;
+            }
+        @media screen and (min-width:768px){
+            .wrap{
+                
+                display:flex;
+                flex-wrap: wrap;
+                /*justify-content: space-between;*/
+            }
+            .item{
+                flex:0 0 30%;
+            }
+            .item1{
+                flex:1;
+            }
+        }
+        .li{
+            text-align: center;
+            padding: 10px;
+            border-style:outset;
+            font-size: 30px;
+            font-family: Roboto Condensed, 微軟正黑體 ,Arial, Helvetica, sans-serif;
+        }
+        .p{
+            border-style:inset;
+            font-size: 20px;
+            padding: 5px;
+        }
+    
+        .title{
+            background-color: #ffa;
+            margin: 0px 5px;
+            padding: 10px; 
+            width: 800px;
+            text-align: center;
+        }
     </style>
 </head>
-<body style="margin:0px;background-image: url(./img/sunset-1651426__340.jpg)">
-    <div class="head">
-        歐信宏      
+<body>
+    <div class="wrap">
+        <div class="item1">測試標題</div>
     </div>
-    <div class="head2">
-        兩百字內的個人簡介。
-            <div class="content">
-                第一個簡介，簡介的內容。
-            </div>
-    </div>
-    <div class="head2">
-        為了成為軟體工程師，曾做過什麼努力？若有具體專案作品請分享給我們。
-        <div class="content">
-            第一個努力
+    <div class="wrap">
+        <div class="item">
+            <ul>
+                <li class="li">兩百字內的個人簡介</li>
+            <p class="p">Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling. The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. </p>
+            </ul>
         </div>
-    </div>
-    <div class="head2">
-        如果參與這個計畫，會怎麼安排學習時間？
-    </div>
-        <div class="content">
-            第一個努力
+        <div class="item">
+            <ul>
+                <li class="li">為了成為軟體工程師曾做過什麼努力？若有具體專案作品請分享給我們</li>
+            <p class="p">Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling. The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. </p>
+            </ul>
         </div>
-    <div class="head2">
-        是否有想要加入的軟體公司？為什麼想加入該公司？
-    </div>
-        <div class="content">
-            第一個努力
+        <div class="item">
+            <ul>
+                <li class="li"> 如果參與這個計畫，會怎麼安排學習時間？</li>
+            <p class="p">Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling. The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. </p>
+            </ul>
         </div>
-    <div class="head2">
-        請描述一件你曾經碰到最困難的事情，如何克服？
-    </div>
-        <div class="content">
-            第一個努力
+        <div class="item">
+            <ul>
+                <li class="li">兩百字內的個人簡介</li>
+            <p class="p">Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling. The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. </p>
+            </ul>
         </div>
-    <div class="head2">
-        關於這份申請網頁，請分享一個你開發時的技術心得。
-    </div>
-        <div class="content">
-            這段時間為了申請網頁爬了不少文章，包含如何使用vscode，github基本使用，html基本排版，css基本設定。這些項目以前都是有帶過而已，現在認真找資料才發現原來有這麼多變化。尤其是html的切版控制，以及css語法，加深了我對版型控制的了解，我會繼續多嘗試不同的版型控制，讓自己在前端設計更進化。
+        <div class="item">
+            <ul>
+                <li class="li">請描述一件你曾經碰到最困難的事情，如何克服？</li>
+            <p class="p">Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling. The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. </p>
+            </ul>
         </div>
-    <div class="head2">
-        其他想要對我們說的事情？
-    </div>
-        <div class="content">
-            第一個努力
+        <div class="item">
+            <ul>
+                <li class="li">關於這份申請網頁，請分享一個你開發時的技術心得。</li>
+            <p class="p">這段時間為了申請網頁爬了不少文章，包含如何使用vscode，github基本使用，html基本排版，css基本設定。這些項目以前都是有帶過而已，現在認真找資料才發現原來有這麼多變化。尤其是html的切版控制，以及css語法，加深了我對版型控制的了解，我會繼續多嘗試不同的版型控制，讓自己在前端設計更進化。 </p>
+            </ul>
         </div>
-    
+        <div class="item">
+            <ul>
+                <li class="li">其他想要對我們說的事情？</li>
+            <p class="p">Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling. The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. </p>
+            </ul>
+        </div>
+</body>
+</html>
